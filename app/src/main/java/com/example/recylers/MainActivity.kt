@@ -1,3 +1,13 @@
+/// Todo 1: Create two rows with Image view
+/// Todo 2: Retrofit with recycler with single row
+/// Todo 3: Room with recycler with single row
+/// Todo 4: Create views   dynamically with single row with floating  action  bar click
+/// Todo 5: Swippable lists view
+/// Todo 6 : item click listner
+
+
+
+
 package com.example.recylers
 
 import android.annotation.SuppressLint
