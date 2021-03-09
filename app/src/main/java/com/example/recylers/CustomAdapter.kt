@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recylers.CustomAdapter.ViewHolder
 class CustomAdapter(val context: Context,val userList: List<User>):RecyclerView.Adapter<ViewHolder>() {
+
    inner class ViewHolder (itemView:View):RecyclerView.ViewHolder(itemView){
         init {
             itemView.setOnClickListener{
