@@ -22,17 +22,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-
         val recyclerView=findViewById(R.id.recyclerView) as RecyclerView
         recyclerView.layoutManager=LinearLayoutManager(this,LinearLayout.VERTICAL,false)
+
+
         val users=ArrayList<User>()
         users.add(User("Fazil","Sheriff"))
         users.add(User("Fahad","Fazil"))
 
+
+
         //creating our adapter
-        val adapter = CustomAdapter(users)
+        val adapter = CustomAdapter(this,users)
         //now adding the adapter to recyclerview
         recyclerView.adapter = adapter
     }
